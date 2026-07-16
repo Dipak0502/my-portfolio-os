@@ -150,11 +150,11 @@ This project showcases not only my technical skills but also my creativity, UI/U
 
 **Deepak Shambhu Paswan**
 
-📧 Email: your-email@example.com
+📧 Email: deepakpaswan5632@gmail.com
 
-💼 LinkedIn: https://linkedin.com/in/your-linkedin
+💼 LinkedIn: https://linkedin.com/in/diiipak-paswan
 
-💻 GitHub: https://github.com/yourusername
+💻 GitHub: https://github.com/Dipak0502
 
 ---
 
