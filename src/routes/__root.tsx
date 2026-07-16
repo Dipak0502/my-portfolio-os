@@ -81,16 +81,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Retro 8-bit desktop OS portfolio for Deepak Shambhu Paswan — Data Analyst, BI, and full-stack developer.",
+          "An 8-bit desktop OS portfolio for Deepak Shambhu Paswan — Data Analyst, BI, and full-stack developer. Explore projects, skills, and mini-games.",
       },
       { name: "author", content: "Deepak Shambhu Paswan" },
       { property: "og:title", content: "DeepakOS — Retro Desktop Portfolio" },
       {
         property: "og:description",
-        content: "A nostalgic retro-OS portfolio with projects, skills, and playable mini-games.",
+        content: "An 8-bit desktop OS portfolio for Deepak Shambhu Paswan — Data Analyst, BI, and full-stack developer. Explore projects, skills, and mini-games.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "DeepakOS — Retro Desktop Portfolio" },
+      { name: "twitter:description", content: "An 8-bit desktop OS portfolio for Deepak Shambhu Paswan — Data Analyst, BI, and full-stack developer. Explore projects, skills, and mini-games." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/4f6cba28-f0c6-4802-8f88-a2ff5295aee5" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/4f6cba28-f0c6-4802-8f88-a2ff5295aee5" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
