@@ -1,24 +1,36 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { DesktopProvider } from "@/lib/desktop-store";
+import { Desktop } from "@/components/retro/Desktop";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "DeepakOS — Retro Desktop Portfolio" },
+      {
+        name: "description",
+        content:
+          "An 8-bit desktop OS portfolio for Deepak Shambhu Paswan — Data Analyst, BI, and full-stack developer. Explore projects, skills, and mini-games.",
+      },
+      { property: "og:title", content: "DeepakOS — Retro Desktop Portfolio" },
+      {
+        property: "og:description",
+        content:
+          "A nostalgic retro-OS portfolio with projects, skills, and playable mini-games.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <DesktopProvider>
+        <Desktop />
+      </DesktopProvider>
+      <div className="crt-overlay" />
+    </>
   );
 }
