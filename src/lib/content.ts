@@ -16,7 +16,7 @@ export const content = {
     email: "deepakpaswan.work@gmail.com",
     phone: "+91 00000 00000",
     linkedin: "https://linkedin.com/in/deepak-paswan",
-    github: "https://github.com/deepakpaswan",
+    github: "https://github.com/Dipak0502",
   },
   education: [
     {
@@ -87,7 +87,7 @@ export const content = {
         "Built KPI cards, drill-through pages, and time-series visuals",
         "Surfaced peak-demand windows for driver allocation",
       ],
-      link: "https://github.com/deepakpaswan",
+      link: "https://github.com/Dipak0502",
     },
     {
       id: "blinkit",
@@ -100,7 +100,7 @@ export const content = {
         "DAX measures for YoY sales, avg rating, fat-content mix",
         "Slicers for outlet type, size, and location tier",
       ],
-      link: "https://github.com/deepakpaswan",
+      link: "https://github.com/Dipak0502",
     },
     {
       id: "vitalguard",
@@ -113,7 +113,7 @@ export const content = {
         "Responsive dashboard with chart components",
         "Modular component library",
       ],
-      link: "https://github.com/deepakpaswan",
+      link: "https://github.com/Dipak0502",
     },
   ],
   certifications: [
