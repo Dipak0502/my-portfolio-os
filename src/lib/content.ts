@@ -14,8 +14,8 @@ export const content = {
   ],
   contact: {
     email: "deepakpaswan5632@gmail.com",
-    phone: "+91 00000 00000",
-    linkedin: "https://linkedin.com/in/deepak-paswan",
+    phone: "+91 96017 81978",
+    linkedin: "https://linkedin.com/in/diiipak-paswan",
     github: "https://github.com/Dipak0502",
   },
   education: [
