@@ -13,7 +13,7 @@ export const content = {
     "Retro tech & games",
   ],
   contact: {
-    email: "deepakpaswan.work@gmail.com",
+    email: "deepakpaswan5632@gmail.com",
     phone: "+91 00000 00000",
     linkedin: "https://linkedin.com/in/deepak-paswan",
     github: "https://github.com/Dipak0502",
