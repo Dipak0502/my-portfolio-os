@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { retroSfx } from "@/lib/retro-sound";
 
 const SIZE = 20;
 const CELL = 18;
@@ -48,6 +49,7 @@ export function SnakeGame() {
         ) {
           setAlive(false);
           setRunning(false);
+          retroSfx.snakeDie();
           setScore((sc) => {
             const b = Math.max(sc, Number(localStorage.getItem("snake-best") ?? 0));
             localStorage.setItem("snake-best", String(b));
@@ -58,6 +60,7 @@ export function SnakeGame() {
         }
         const ate = head.x === food.x && head.y === food.y;
         if (ate) {
+          retroSfx.snakeEat();
           setFood(rand());
           setScore((sc) => sc + 1);
           return [head, ...s];

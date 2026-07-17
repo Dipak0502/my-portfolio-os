@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { retroSfx } from "@/lib/retro-sound";
 
 const ICONS = ["⚛️", "🐍", "📊", "💾", "🎮", "⚡", "🚀", "🖥️"];
 
@@ -38,8 +39,10 @@ export function MemoryGame() {
     const t = setTimeout(() => {
       setDeck((d) => {
         if (d[a].icon === d[b].icon) {
+          retroSfx.memoryMatch();
           return d.map((c, i) => (i === a || i === b ? { ...c, matched: true } : c));
         }
+        retroSfx.memoryMiss();
         return d;
       });
       setFlipped([]);
@@ -51,6 +54,7 @@ export function MemoryGame() {
 
   useEffect(() => {
     if (won) {
+      retroSfx.memoryWin();
       const b = Number(localStorage.getItem("memory-best") ?? Infinity);
       if (moves < b) {
         localStorage.setItem("memory-best", String(moves));
@@ -61,6 +65,7 @@ export function MemoryGame() {
 
   const flip = (i: number) => {
     if (flipped.length === 2 || flipped.includes(i) || deck[i].matched) return;
+    retroSfx.memoryFlip();
     setFlipped((f) => {
       const next = [...f, i];
       if (next.length === 2) setMoves((m) => m + 1);
