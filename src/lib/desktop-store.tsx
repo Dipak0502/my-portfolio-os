@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext, useMemo, useRef, useState, type ReactNode } from "react";
+import { retroSfx } from "./retro-sound";
 
 export type WindowId = string;
 
@@ -40,6 +41,7 @@ export function DesktopProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const open = useCallback<DesktopCtx["open"]>(({ id, title, icon, w = 640, h = 460 }) => {
+    retroSfx.open();
     setWindows((ws) => {
       const existing = ws.find((x) => x.id === id);
       zRef.current += 1;
@@ -75,10 +77,12 @@ export function DesktopProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const close = useCallback((id: WindowId) => {
+    retroSfx.close();
     setWindows((ws) => ws.filter((w) => w.id !== id));
   }, []);
 
   const minimize = useCallback((id: WindowId) => {
+    retroSfx.minimize();
     setWindows((ws) => ws.map((w) => (w.id === id ? { ...w, minimized: !w.minimized } : w)));
   }, []);
 
