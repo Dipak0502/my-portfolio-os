@@ -30,18 +30,18 @@ export function Desktop() {
       onMouseDown={() => setSelected(null)}
     >
       {/* Icon grid */}
-      <div className="p-4 grid grid-flow-col grid-rows-6 auto-cols-max gap-x-4 gap-y-3">
+      <div className="p-4 grid grid-flow-col grid-rows-6 auto-cols-max gap-x-6 gap-y-6">
         {desktopIcons.map((a) => (
           <button
             key={a.id}
             onMouseDown={(e) => e.stopPropagation()}
             onClick={() => setSelected(a.id)}
             onDoubleClick={() => open({ id: a.id, title: a.title, icon: a.icon, w: a.w, h: a.h })}
-            className={`icon-tile flex flex-col items-center gap-1 w-20 p-1 ${selected === a.id ? "selected" : ""}`}
+            className={`icon-tile flex flex-col items-center gap-2 w-24 p-1 ${selected === a.id ? "selected" : ""}`}
           >
             <span className="icon-glyph text-3xl">{a.icon}</span>
             <span
-              className="icon-label pixel text-[8px] leading-tight text-center px-1 py-0.5 text-white break-words"
+              className="icon-label pixel text-[8px] leading-[1.4] text-center px-1 py-0.5 text-white break-words whitespace-normal"
               style={{ textShadow: "1px 1px 0 #000" }}
             >
               {a.title}

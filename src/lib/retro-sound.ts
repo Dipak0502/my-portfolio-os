@@ -37,4 +37,12 @@ export const retroSfx = {
   close: () => blip([660, 440, 220], 0.12),
   minimize: () => blip([520, 260], 0.09),
   click: () => blip([880], 0.04, "square", 0.05),
+  // Snake
+  snakeEat: () => blip([880, 1320], 0.09, "square", 0.09),
+  snakeDie: () => blip([440, 330, 220, 110, 55], 0.55, "sawtooth", 0.11),
+  // Memory match
+  memoryFlip: () => blip([660], 0.05, "triangle", 0.07),
+  memoryMatch: () => blip([784, 988, 1319], 0.22, "triangle", 0.09),
+  memoryMiss: () => blip([200, 150], 0.18, "sawtooth", 0.07),
+  memoryWin: () => blip([523, 659, 784, 1047, 1319], 0.5, "square", 0.09),
 };
