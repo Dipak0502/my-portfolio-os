@@ -1,3 +1,5 @@
+import resumeAsset from "@/assets/Deepak_Paswan_Resume.pdf.asset.json";
+
 export function ResumeApp() {
   return (
     <div className="space-y-4 text-center">
@@ -10,8 +12,10 @@ export function ResumeApp() {
         (Recruiters: this button downloads the PDF version of everything in DeepakOS.)
       </p>
       <a
-        href="/resume.pdf"
-        download
+        href={resumeAsset.url}
+        download="Deepak_Paswan_Resume.pdf"
+        target="_blank"
+        rel="noreferrer"
         className="pixel-btn pixel-btn-accent inline-block"
       >
         ⬇ DOWNLOAD RESUME
