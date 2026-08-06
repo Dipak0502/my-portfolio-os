@@ -37,7 +37,7 @@ export function Desktop() {
             onMouseDown={(e) => e.stopPropagation()}
             onClick={() => setSelected(a.id)}
             onDoubleClick={() => open({ id: a.id, title: a.title, icon: a.icon, w: a.w, h: a.h })}
-            className={`icon-tile flex flex-col items-center gap-2 w-24 p-1 ${selected === a.id ? "selected" : ""}`}
+            className={`icon-tile flex flex-col items-center gap-2 w-28 p-2 ${selected === a.id ? "selected" : ""}`}
           >
             <span className="icon-glyph text-3xl">{a.icon}</span>
             <span
