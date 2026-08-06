@@ -41,7 +41,7 @@ export function Desktop() {
           >
             <span className="icon-glyph text-3xl">{a.icon}</span>
             <span
-              className="icon-label pixel text-[8px] leading-[1.4] text-center px-1 py-0.5 text-white break-words whitespace-normal"
+              className="icon-label pixel text-[8px] leading-[1.5] text-center px-1.5 py-0.5 text-white break-words whitespace-normal w-full"
               style={{ textShadow: "1px 1px 0 #000" }}
             >
               {a.title}
