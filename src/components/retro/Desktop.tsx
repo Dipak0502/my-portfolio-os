@@ -30,7 +30,7 @@ export function Desktop() {
       onMouseDown={() => setSelected(null)}
     >
       {/* Icon grid */}
-      <div className="p-4 grid grid-flow-col grid-rows-6 auto-cols-max gap-x-6 gap-y-6">
+      <div className="p-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 grid-flow-row gap-x-6 gap-y-5 place-items-start">
         {desktopIcons.map((a) => (
           <button
             key={a.id}
