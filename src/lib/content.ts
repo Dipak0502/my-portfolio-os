@@ -115,6 +115,20 @@ export const content = {
       ],
       link: "https://github.com/Dipak0502",
     },
+    {
+      id: "dashforge",
+      name: "DashForge",
+      stack: "React · TypeScript · Vite · Tailwind CSS · Apache ECharts",
+      description:
+        "A client-side data dashboard builder: drop in a CSV or Excel file and instantly get interactive charts, KPI tiles, filters, and exportable PDF/PNG/CSV reports — no server, no data upload.",
+      bullets: [
+        "Smart column type inference with an override editor",
+        "Auto-generated ECharts visualizations with a chart editor",
+        "Live filtering, KPI computation, and one-click export",
+        "Dark/light theme toggle and a built-in sample retail dataset",
+      ],
+      link: "https://github.com/Dipak0502",
+    },
   ],
   certifications: [
     {
