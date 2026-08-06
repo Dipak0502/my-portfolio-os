@@ -129,6 +129,20 @@ export const content = {
       ],
       link: "https://github.com/Dipak0502",
     },
+    {
+      id: "mealbridge",
+      name: "MealBridge",
+      stack: "React · Tailwind CSS · Supabase",
+      description:
+        "A local food waste redistribution platform connecting restaurants with surplus edible food to nearby NGOs and individuals — reducing food waste, one pickup at a time.",
+      bullets: [
+        "Real-time surplus food listings with expiry timers and distance filtering",
+        "Role-based accounts and flows for restaurants, NGOs, and individuals",
+        "Pickup scheduling with claim confirmations and reminders",
+        "Post-pickup ratings and trust system to build a safe community",
+      ],
+      link: "https://meal-bridge-gj.lovable.app",
+    },
   ],
   certifications: [
     {
