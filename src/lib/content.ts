@@ -143,6 +143,20 @@ export const content = {
       ],
       link: "https://meal-bridge-gj.lovable.app",
     },
+    {
+      id: "skillswap",
+      name: "SkillSwap",
+      stack: "React · TypeScript · Tailwind CSS · Vite · Supabase · PostgreSQL",
+      description:
+        "A peer-to-peer learning platform where students exchange knowledge instead of money. Students earn credits by teaching skills they know and spend credits to learn new skills from others.",
+      bullets: [
+        "User authentication and profile creation with teach/learn skills",
+        "Skill listings, requests, search, and student-to-student matching",
+        "Session scheduling with a credit-based learning economy",
+        "Rating & review system and a fully responsive dashboard",
+      ],
+      link: "https://skillswap-knowhow.lovable.app",
+    },
   ],
   certifications: [
     {
