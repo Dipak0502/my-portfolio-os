@@ -51,7 +51,7 @@ export function Desktop() {
       </div>
 
       {/* Header sticker */}
-      <div className="absolute top-4 right-4 pixel text-[10px] text-white text-right pointer-events-none">
+      <div className="absolute bottom-16 right-4 pixel text-[10px] text-white text-right pointer-events-none">
         <div className="text-[var(--color-neon-lime)]">DEEPAK-OS v1.0</div>
         <div className="text-[9px] opacity-80 mt-1">DOUBLE-CLICK ANY ICON</div>
       </div>
