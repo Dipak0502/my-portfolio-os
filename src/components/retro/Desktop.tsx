@@ -4,6 +4,7 @@ import { APPS, APPS_BY_ID } from "./apps/registry";
 import { Window } from "./Window";
 import { Taskbar } from "./Taskbar";
 import { BootScreen } from "./BootScreen";
+import desktopBg from "@/assets/retro-space-desktop.png.asset.json";
 
 export function Desktop() {
   const { windows, open } = useDesktop();
