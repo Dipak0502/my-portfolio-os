@@ -28,6 +28,7 @@ export function Desktop() {
   return (
     <div
       className="desktop-bg fixed inset-0 overflow-hidden select-none"
+      style={{ backgroundImage: `url(${desktopBg.url})` }}
       onMouseDown={() => setSelected(null)}
     >
       {/* Icon grid */}
