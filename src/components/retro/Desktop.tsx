@@ -4,6 +4,7 @@ import { APPS, APPS_BY_ID } from "./apps/registry";
 import { Window } from "./Window";
 import { Taskbar } from "./Taskbar";
 import { BootScreen } from "./BootScreen";
+import desktopBg from "@/assets/retro-space-desktop.png.asset.json";
 
 export function Desktop() {
   const { windows, open } = useDesktop();
@@ -27,6 +28,7 @@ export function Desktop() {
   return (
     <div
       className="desktop-bg fixed inset-0 overflow-hidden select-none"
+      style={{ backgroundImage: `url(${desktopBg.url})` }}
       onMouseDown={() => setSelected(null)}
     >
       {/* Icon grid */}

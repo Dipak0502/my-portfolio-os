@@ -132,10 +132,9 @@
 .crt-flicker { animation: flicker 3s infinite; }
 
 .desktop-bg {
-  background:
-    radial-gradient(circle at 20% 20%, oklch(0.30 0.18 300) 0%, transparent 45%),
-    radial-gradient(circle at 80% 70%, oklch(0.28 0.16 200) 0%, transparent 50%),
-    linear-gradient(135deg, var(--color-desktop) 0%, var(--color-desktop-2) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Pixel border — retro 3D chisel */
